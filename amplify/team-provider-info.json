@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gogoweb-staging-114507-authRole",
+      "UnauthRoleArn": "arn:aws:iam::121753667442:role/amplify-gogoweb-staging-114507-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::121753667442:role/amplify-gogoweb-staging-114507-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-gogoweb-staging-114507-deployment",
+      "UnauthRoleName": "amplify-gogoweb-staging-114507-unauthRole",
+      "StackName": "amplify-gogoweb-staging-114507",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:121753667442:stack/amplify-gogoweb-staging-114507/18c35ab0-ea19-11eb-b83d-0261ca7c64a4",
+      "AmplifyAppId": "d118xoisvrazgm"
+    }
+  }
+}
