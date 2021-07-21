@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Amplify, { API, graphqlOperation } from "aws-amplify";
 import config from "../aws-exports";
-import { listTodos } from "../graphql/queries";
+import { listBlogs } from "../graphql/queries";
 
 Amplify.configure(config);
 
@@ -10,7 +10,7 @@ const Blog = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await API.graphql(graphqlOperation(listTodos));
+      const result = await API.graphql(graphqlOperation(listBlogs));
       console.log(result);
       setData(result);
     };
@@ -22,9 +22,9 @@ const Blog = () => {
       <div>Todos...</div>
       <ul>
         {data &&
-          data.data.listTodos.items.map((item) => (
+          data.data.listBlogs.items.map((item) => (
             <li key={item.id}>
-              {item.name}
+              {item.title}
             </li>
           ))}
       </ul>
