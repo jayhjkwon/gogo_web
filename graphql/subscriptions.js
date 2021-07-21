@@ -6,6 +6,7 @@ export const onCreateBlog = /* GraphQL */ `
     onCreateBlog {
       id
       title
+      contents
       _version
       _deleted
       _lastChangedAt
@@ -19,6 +20,7 @@ export const onUpdateBlog = /* GraphQL */ `
     onUpdateBlog {
       id
       title
+      contents
       _version
       _deleted
       _lastChangedAt
@@ -32,6 +34,7 @@ export const onDeleteBlog = /* GraphQL */ `
     onDeleteBlog {
       id
       title
+      contents
       _version
       _deleted
       _lastChangedAt

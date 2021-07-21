@@ -11,6 +11,7 @@ type BlogMetaData = {
 export declare class Blog {
   readonly id: string;
   readonly title?: string;
+  readonly contents?: string;
   readonly createdAt?: string;
   readonly updatedAt?: string;
   constructor(init: ModelInit<Blog, BlogMetaData>);

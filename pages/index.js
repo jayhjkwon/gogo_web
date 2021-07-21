@@ -24,7 +24,7 @@ const Blog = () => {
         {data &&
           data.data.listBlogs.items.map((item) => (
             <li key={item.id}>
-              {item.title}
+              {item.title} - {item.contents}
             </li>
           ))}
       </ul>

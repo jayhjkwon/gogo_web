@@ -1,4 +1,6 @@
 type Blog @model @auth(rules: [{allow: public}]) {
   id: ID!
   title: String
+  contents: String
 }
+ 

@@ -6,6 +6,7 @@ export const getBlog = /* GraphQL */ `
     getBlog(id: $id) {
       id
       title
+      contents
       _version
       _deleted
       _lastChangedAt
@@ -24,6 +25,7 @@ export const listBlogs = /* GraphQL */ `
       items {
         id
         title
+        contents
         _version
         _deleted
         _lastChangedAt
@@ -51,6 +53,7 @@ export const syncBlogs = /* GraphQL */ `
       items {
         id
         title
+        contents
         _version
         _deleted
         _lastChangedAt
